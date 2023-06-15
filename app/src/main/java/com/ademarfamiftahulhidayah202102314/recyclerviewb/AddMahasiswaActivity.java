@@ -67,6 +67,7 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                     jeniskelamin = URLEncoder.encode(jeniskelamin, "utf-8");
                     nama = URLEncoder.encode(nama, "utf-8");
                     nim = URLEncoder.encode(nim, "utf-8");
+                    jp = URLEncoder.encode(jp, "utf-8");
                     statusNikah = URLEncoder.encode(statusNikah, "utf-8");
                     tanggalLahir = URLEncoder.encode(tanggalLahir, "utf-8");
                     tempatLahir = URLEncoder.encode(tempatLahir, "utf-8");
@@ -76,14 +77,14 @@ public class AddMahasiswaActivity extends AppCompatActivity {
 
                 String url = "https://stmikpontianak.net/011100862/tambahlMahasiswa.php" +
                         "?nim=" + nim +
-                        "?nama=" + nama +
-                        "?jenisKelamin=" + jeniskelamin +
-                        "?tempatLahir=" + tempatLahir +
-                        "?tanggalLahir=" + tanggalLahir +
-                        "?alamat=" + alamat +
-                        "?jp=" + jp +
-                        "?statusPernikahan=" + statusNikah +
-                        "?tahunMasuk=" + tahunMasuk;
+                        "&nama=" + nama +
+                        "&jenisKelamin=" + jeniskelamin +
+                        "&tempatLahir=" + tempatLahir +
+                        "&tanggalLahir=" + tanggalLahir +
+                        "&alamat=" + alamat +
+                        "&jp=" + jp +
+                        "&statusPernikahan=" + statusNikah +
+                        "&tahunMasuk=" + tahunMasuk;
 
                 Log.d("*tw*", url);
 
